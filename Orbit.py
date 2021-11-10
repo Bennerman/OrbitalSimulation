@@ -2,7 +2,7 @@ import math
 import pygame
 
 
-dt = 1
+dt = 0.1
 
 
 
@@ -31,8 +31,8 @@ class MassObject:
         return self.momentum
 
 
-sun = MassObject("Sun", 10000000, .5, [300,300], [0,0], 0)
-earth = MassObject("Earth", 0.001, .05, [200,400], [0,.0004], 0)
+sun = MassObject("Sun", 10000000, .5, [300,300], [0,1000000], 0)
+earth = MassObject("Earth", 0.0005, .05, [200,400], [0,.0004], 0)
 
 
 def gravForce(obj1, obj2):
